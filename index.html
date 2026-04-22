@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LividShop.com | Premium E-commerce Destination</title>
+    
+    <!-- الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&family=Playfair+Display:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- محرك التنسيق Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#020617',
+                        livid: '#4f46e5', // لون أزرق ليفيد
+                        lividLight: '#818cf8',
+                        surface: '#0f172a'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #020617; color: #f8fafc; }
+        
+        /*  */
+        .hero-section {
+            background: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.95)), 
+                        url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(79, 70, 229, 0.2);
+        }
+
+        .gradient-border {
+            border-image: linear-gradient(to right, #4f46e5, #818cf8) 1;
+        }
+
+        .livid-shadow {
+            box-shadow: 0 0 30px rgba(79, 70, 229, 0.2);
+        }
+    </style>
+</head>
+<body class="font-sans selection:bg-livid selection:text-white overflow-x-hidden">
+
+    <!-- القائمة العلوية -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-dark/80 backdrop-blur-xl px-6 md:px-12 py-5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-livid flex items-center justify-center rounded-lg shadow-lg">
+                    <i class="fa-solid fa-shopping-cart text-white"></i>
+                </div>
+                <span class="text-xl font-black uppercase tracking-tighter italic">Livid<span class="text-livid">Shop</span></span>
+            </div>
+            
+            <div class="hidden lg:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">
+                <a href="#about" class="hover:text-livid transition">The Asset</a>
+                <a href="#stats" class="hover:text-livid transition">Market Data</a>
+                <a href="#usecases" class="hover:text-livid transition">Potential</a>
+                <a href="#contact" class="hover:text-livid transition">Contact</a>
+            </div>
+
+            <a href="https://www.godaddy.com/domainsearch/find?domainToCheck=lividshop.com" target="_blank" class="bg-livid hover:bg-white text-white hover:text-dark px-8 py-2.5 rounded-sm text-[10px] font-black uppercase tracking-widest transition-all">
+                Buy on GoDaddy
+            </a>
+        </div>
+    </nav>
+
+    <!-- الواجهة الرئيسية -->
+    <header class="relative min-h-screen flex items-center justify-center hero-section px-6 pt-20">
+        <div class="relative z-10 max-w-6xl mx-auto text-center">
+            <div class="inline-flex items-center space-x-3 border border-livid/30 px-6 py-2 mb-10 rounded-full bg-livid/5">
+                <i class="fa-solid fa-star text-livid text-[10px]"></i>
+                <span class="text-livid text-[9px] font-black uppercase tracking-[0.5em]">Premium E-commerce Domain Listing</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl lg:text-9xl font-serif font-black text-white mb-10 leading-[1.1] tracking-tighter italic">
+                Beyond The <br> <span class="text-livid">Retail Horizon.</span>
+            </h1>
+            
+            <p class="text-slate-400 text-lg md:text-2xl mb-16 max-w-4xl mx-auto font-light leading-relaxed">
+                <span class="text-white font-bold tracking-widest uppercase">LividShop.com</span> is a short, energetic, and highly memorable brand identity designed for the future of global digital commerce.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8">
+                <a href="https://www.godaddy.com/domainsearch/find?domainToCheck=lividshop.com" target="_blank" class="w-full sm:w-auto bg-white text-dark px-14 py-6 font-black uppercase tracking-widest text-sm hover:bg-livid hover:text-white transition-all shadow-2xl scale-105 border-2 border-white">
+                    Acquire via GoDaddy
+                </a>
+                <a href="mailto:cccvcccv3@gmail.com" class="w-full sm:w-auto text-slate-400 hover:text-livid border-b border-white/10 py-4 text-xs font-black uppercase tracking-[0.4em] transition-all italic">
+                    Owner: cccvcccv3@gmail.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم التحليل التسويقي -->
+    <section id="about" class="py-40 px-6 bg-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-24 items-center">
+                <div class="space-y-12">
+                    <div class="border-l-8 border-livid pl-10">
+                        <h2 class="text-4xl md:text-7xl font-serif font-black text-white leading-none uppercase italic">A Domain <br> <span class="text-livid">With Impact.</span></h2>
+                    </div>
+                    <div class="space-y-6 text-slate-400 text-xl leading-relaxed font-light">
+                        <p>
+                            In the saturated world of online shopping, your name is your first sale. <strong>LividShop.com</strong> offers a unique phonetic punch—it's fast, trendy, and authoritative.
+                        </p>
+                        <p>
+                            Whether you are launching a high-fashion streetwear label, a cutting-edge electronics hub, or a beauty empire, this domain provides the ultimate foundation for brand growth.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="glass-panel p-10 rounded-2xl livid-shadow">
+                            <h4 class="text-livid font-black uppercase tracking-widest text-[9px] mb-4 italic">Domain Type</h4>
+                            <p class="text-white font-bold text-3xl tracking-tighter italic">Top-Tier .COM</p>
+                        </div>
+                        <div class="glass-panel p-10 rounded-2xl">
+                            <h4 class="text-livid font-black uppercase tracking-widest text-[9px] mb-4 italic">Value Retention</h4>
+                            <p class="text-white font-bold text-3xl tracking-tighter italic">Liquid Asset</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group rounded-3xl overflow-hidden border border-livid/20 shadow-2xl">
+                    <!--  -->
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop" class="w-full h-[700px] object-cover grayscale-[0.2] group-hover:grayscale-0 transition duration-1000" alt="Style">
+                    <div class="absolute bottom-10 left-10 glass-panel px-10 py-6 rounded-2xl border-l-4 border-livid">
+                        <p class="font-serif italic text-3xl text-white">Strike Boldly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم إحصائيات السوق -->
+    <section id="stats" class="py-40 px-6 bg-[#05091a]">
+        <div class="max-w-7xl mx-auto text-center mb-32 italic">
+            <h2 class="text-4xl md:text-7xl font-serif font-black text-white uppercase tracking-tighter mb-4">Retail <span class="text-livid">Insights</span></h2>
+            <div class="h-1 w-32 bg-livid mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+            <div class="space-y-4">
+                <p class="text-6xl font-black text-white italic font-serif tracking-tighter">$6.3T</p>
+                <p class="text-livid font-bold uppercase tracking-widest text-[10px]">E-commerce Projection 2026</p>
+                <p class="text-slate-500 text-sm leading-relaxed">The digital retail market is expanding faster than ever. Owning a premium .com is your entry ticket to this growth.</p>
+            </div>
+            <div class="space-y-4">
+                <p class="text-6xl font-black text-white italic font-serif tracking-tighter">72%</p>
+                <p class="text-livid font-bold uppercase tracking-widest text-[10px]">Brand Recognition Increase</p>
+                <p class="text-slate-500 text-sm leading-relaxed">Short, 9-letter domains see a significantly higher return rate and memorability among Gen Z and Millennial shoppers.</p>
+            </div>
+            <div class="space-y-4">
+                <p class="text-6xl font-black text-white italic font-serif tracking-tighter">0.3s</p>
+                <p class="text-livid font-bold uppercase tracking-widest text-[10px]">Impression Time</p>
+                <p class="text-slate-500 text-sm leading-relaxed">Users decide to trust a shop within milliseconds. LividShop projects instant professional authority and safety.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- حالات الاستخدام المتنوعة -->
+    <section id="usecases" class="py-40 px-6 bg-dark border-y border-white/5">
+        <div class="max-w-7xl mx-auto text-center mb-32">
+            <h2 class="text-4xl md:text-6xl font-serif font-black text-white uppercase tracking-tighter italic">Business <span class="text-livid not-italic font-sans">Verticals</span></h2>
+            <p class="text-slate-500 font-bold uppercase tracking-[0.4em] text-[10px] mt-6 italic">Perfect Fit for Multiple Industry Sectors</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Box 1 -->
+            <div class="relative h-[600px] rounded-3xl overflow-hidden group border border-white/5 shadow-2xl">
+                <!--  -->
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1200&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-1000 opacity-60" alt="Footwear">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent"></div>
+                <div class="relative h-full flex flex-col justify-end p-12">
+                    <h3 class="text-3xl font-black font-serif text-white mb-4 italic uppercase">Luxury Footwear</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm">Build a premier sneaker and luxury footwear brand. LividShop sounds fast, energetic, and street-smart.</p>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="relative h-[600px] rounded-3xl overflow-hidden group border border-white/5 shadow-2xl">
+                <!--  -->
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfad450516?q=80&w=1200&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-1000 opacity-60" alt="Beauty">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent"></div>
+                <div class="relative h-full flex flex-col justify-end p-12 text-right">
+                    <h3 class="text-3xl font-black font-serif text-white mb-4 italic uppercase">Elite Beauty</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm ml-auto">A high-authority name for cosmetics and skincare. Projects a sense of vibrant, intense beauty standards.</p>
+                </div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="relative h-[600px] rounded-3xl overflow-hidden group border border-white/5 shadow-2xl">
+                <!--  -->
+                <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=1200&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-1000 opacity-60" alt="Tech">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent"></div>
+                <div class="relative h-full flex flex-col justify-end p-12">
+                    <h3 class="text-3xl font-black font-serif text-white mb-4 italic uppercase">Tech Storefront</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm">The ultimate address for selling gadgets, audio equipment, and home automation in a modern ecosystem.</p>
+                </div>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="relative h-[600px] rounded-3xl overflow-hidden group border border-white/5 shadow-2xl">
+                <!--  -->
+                <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=1200&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-1000 opacity-60" alt="Apparel">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent"></div>
+                <div class="relative h-full flex flex-col justify-end p-12 text-right">
+                    <h3 class="text-3xl font-black font-serif text-white mb-4 italic uppercase">Curated Apparel</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm ml-auto">Launch a high-end dropshipping or private label apparel business with a name that is easy to brand and market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل النهائي والشراء -->
+    <section id="contact" class="py-40 px-6 relative bg-dark overflow-hidden">
+        <div class="max-w-5xl mx-auto glass-panel p-12 md:p-24 rounded-[3rem] shadow-2xl relative z-10 border-t-4 border-livid">
+            <div class="text-center mb-20 italic">
+                <h2 class="text-4xl md:text-8xl font-serif font-black text-white mb-6 uppercase tracking-widest italic">Acquire <span class="text-livid">The Brand</span></h2>
+                <p class="text-slate-500 max-w-2xl mx-auto uppercase font-bold tracking-[0.4em] text-[9px]">Confidential Inquiry Channel for Retail Investors</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-20 items-center italic">
+                <div class="space-y-12">
+                    <div class="flex items-center space-x-8 group">
+                        <div class="w-16 h-16 bg-livid/10 border border-livid/30 flex items-center justify-center text-livid text-2xl group-hover:bg-livid group-hover:text-white transition-all duration-500 shadow-xl"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <p class="text-[9px] uppercase tracking-widest font-black text-slate-500 mb-1">Official Inquiry</p>
+                            <a href="mailto:cccvcccv3@gmail.com" class="text-xl font-bold text-white hover:text-livid transition tracking-tighter">cccvcccv3@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-8 group">
+                        <div class="w-16 h-16 bg-livid/10 border border-livid/30 flex items-center justify-center text-livid text-2xl group-hover:bg-livid group-hover:text-white transition-all duration-500 shadow-xl"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div>
+                            <p class="text-[9px] uppercase tracking-widest font-black text-slate-500 mb-1">Buy Securely</p>
+                            <a href="https://www.godaddy.com/domainsearch/find?domainToCheck=lividshop.com" target="_blank" class="text-xl font-bold text-white hover:text-livid transition tracking-tighter">GoDaddy Listing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="space-y-8" action="mailto:cccvcccv3@gmail.com" method="post" enctype="text/plain">
+                    <div class="space-y-3">
+                        <label class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 ml-1">Provisional Offer (USD)</label>
+                        <input type="text" name="offer" placeholder="e.g. $15,000" class="w-full bg-white/5 border-b-2 border-livid/30 py-5 outline-none focus:border-livid transition text-xl text-white font-serif italic" required />
+                    </div>
+                    <div class="space-y-3">
+                        <label class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 ml-1">Your Email</label>
+                        <input type="email" name="email" placeholder="contact@brand.com" class="w-full bg-white/5 border-b-2 border-livid/30 py-5 outline-none focus:border-livid transition text-xl text-white font-serif italic" required />
+                    </div>
+                    <button type="submit" class="w-full bg-livid text-white py-8 font-black uppercase tracking-[0.5em] text-xs hover:bg-white hover:text-dark transition-all shadow-2xl">
+                        Send Secure Offer
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="py-24 bg-dark border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col items-center space-y-12">
+                <div class="flex items-center space-x-4 italic">
+                    <div class="w-10 h-10 bg-livid flex items-center justify-center rounded-lg shadow-lg">
+                        <i class="fa-solid fa-bag-shopping text-white"></i>
+                    </div>
+                    <span class="text-3xl font-black uppercase tracking-widest text-white italic">Livid<span class="text-livid">Shop</span></span>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-12 text-[9px] font-black uppercase tracking-[0.5em] text-slate-600">
+                    <a href="https://www.godaddy.com/domainsearch/find?domainToCheck=lividshop.com" target="_blank" class="hover:text-white transition">GoDaddy Offering</a>
+                    <a href="mailto:cccvcccv3@gmail.com" class="hover:text-white transition italic">Owner Direct</a>
+                    <span class="opacity-20 hidden md:inline">|</span>
+                    <span class="opacity-40 italic uppercase">Premium Portfolio Asset</span>
+                </div>
+
+                <div class="pt-16 border-t border-white/5 w-full">
+                    <p class="text-slate-800 text-[10px] font-bold uppercase tracking-[0.6em] italic">
+                        &copy; 2026 LividShop.com • Verified Domain Transaction • cccvcccv3@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
