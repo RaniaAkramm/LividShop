@@ -4,155 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Dynamic SEO Tags -->
-    <title id="site-title">GoLivid Shop</title>
-    <meta name="description" id="meta-desc" content="">
-    <meta name="keywords" id="meta-keys" content="">
+    <!-- SEO Meta Tags -->
+    <title id="site-title">Livid Shop | Buy Efootball Coins</title>
+    <meta name="description" id="meta-desc" content="Buy Efootball 2026 coins for Android. Safe and fast delivery via WhatsApp and Gmail.">
+    <meta name="keywords" id="meta-keys" content="buy efootball coins, efootball 2026, android coins, bounty rush accounts">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Tajawal:wght@400;700;900&display=swap');
-        .lang-ar { font-family: 'Tajawal', sans-serif; }
-        .lang-en { font-family: 'Inter', sans-serif; }
-        .product-card { transition: all 0.3s ease; }
-        .product-card:hover { transform: translateY(-8px); }
-        #loading-screen { display: flex; }
+        
+        :root { --font-en: 'Inter', sans-serif; --font-ar: 'Tajawal', sans-serif; }
+        .lang-ar { font-family: var(--font-ar); }
+        .lang-en { font-family: var(--font-en); }
+        
+        .product-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-card:hover { transform: translateY(-10px); }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .contact-icon:hover { transform: scale(1.15); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 lang-en transition-all duration-300">
-
-    <!-- Loading Spinner -->
-    <div id="loading-screen" class="fixed inset-0 bg-white z-[100] flex flex-col items-center justify-center">
-        <div class="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin"></div>
-        <p class="mt-4 font-bold text-indigo-600">Loading GoLivid Shop...</p>
-    </div>
+<body class="bg-slate-50 text-slate-900 lang-en transition-colors duration-500">
 
     <!-- Header -->
-    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="bg-indigo-600 p-2 rounded-lg text-white shadow-lg shadow-indigo-200">
-                    <i class="fas fa-gamepad text-xl"></i>
+            <div class="flex items-center gap-3">
+                <div class="bg-indigo-600 p-2 rounded-xl text-white shadow-lg shadow-indigo-200">
+                    <i class="fas fa-bolt text-xl"></i>
                 </div>
-                <span class="text-2xl font-black tracking-tighter">GoLivid<span class="text-indigo-600">Shop</span></span>
+                <h1 class="text-2xl font-black tracking-tighter text-slate-800">GoLivid<span class="text-indigo-600">Shop</span></h1>
             </div>
-            <button onclick="toggleLanguage()" class="flex items-center gap-2 px-5 py-2 bg-slate-900 text-white rounded-full font-bold hover:bg-indigo-600 transition-all text-sm">
-                <i class="fas fa-language"></i>
+            
+            <button onclick="toggleLanguage()" class="bg-slate-900 text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-indigo-600 transition-all shadow-md">
+                <i class="fas fa-language mr-2 rtl:ml-2"></i>
                 <span id="lang-btn-text">العربية</span>
             </button>
         </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="bg-slate-950 text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         <div class="container mx-auto px-4 text-center relative z-10">
-            <h1 id="hero-title" class="text-4xl md:text-6xl font-black mb-6">...</h1>
-            <p id="hero-sub" class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto mb-10">...</p>
-            <a href="#store" id="hero-btn" class="bg-indigo-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-indigo-500 transition shadow-xl inline-block">Explore</a>
+            <h2 id="hero-title" class="text-4xl md:text-6xl font-black mb-6 leading-tight">Buy Premium Game Coins</h2>
+            <p id="hero-desc" class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto mb-10">Instant delivery for Efootball 2026 Android coins and more. Best prices guaranteed.</p>
+            <a href="#products" id="hero-btn" class="bg-indigo-600 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-indigo-500 transition shadow-xl shadow-indigo-500/20 inline-block">Explore Offers</a>
         </div>
     </section>
 
-    <!-- Products Container -->
-    <main class="container mx-auto px-4 py-16" id="store">
+    <!-- Products Section -->
+    <main class="container mx-auto px-4 py-16" id="products">
         <div class="flex items-center gap-4 mb-12">
             <div class="h-10 w-2 bg-indigo-600 rounded-full"></div>
-            <h2 id="section-title" class="text-3xl font-bold">Available Accounts</h2>
+            <h3 id="section-title" class="text-3xl font-bold">Featured Packages</h3>
         </div>
-        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>
+
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- JavaScript will render products here -->
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t border-slate-100 py-12 text-center">
-        <p class="font-bold text-slate-800">GoLividShop@gmail.com | +964 780 538 0508</p>
-        <p class="text-slate-400 text-xs mt-4">© 2024 GoLivid Store.</p>
+    <!-- Footer with Icons Only -->
+    <footer class="bg-white border-t border-slate-100 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h4 id="footer-title" class="text-2xl font-bold text-slate-800 mb-8">Contact Our Support</h4>
+            <div class="flex justify-center gap-8">
+                <!-- WhatsApp Icon -->
+                <a href="https://wa.me/9647805380508" target="_blank" class="contact-icon bg-green-500 text-white hover:bg-green-600" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <!-- Gmail Icon -->
+                <a href="mailto:GoLividShop@gmail.com" class="contact-icon bg-indigo-600 text-white hover:bg-indigo-700" title="Email">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+            <p class="text-slate-400 text-sm mt-12">© 2024 GoLivid Store. Optimized for Efootball Search.</p>
+        </div>
     </footer>
 
     <script>
-        let seo = {};
-        let products = [];
-        let lang = 'en';
-
-        // وظيفة جلب البيانات من الملفات
-        async function loadStore() {
-            try {
-                const [seoRes, prodRes] = await Promise.all([
-                    fetch('seo.json'),
-                    fetch('products.json')
-                ]);
-                seo = await seoRes.json();
-                products = await prodRes.json();
-                
-                document.getElementById('loading-screen').style.display = 'none';
-                updateUI();
-            } catch (err) {
-                console.error("Fetch error - This usually happens when opening local files directly. Try using a local server or upload to GitHub.");
-                // عرض رسالة خطأ للمستخدم إذا لم تعمل الملفات
-                document.getElementById('loading-screen').innerHTML = `
-                    <div class="p-8 text-center">
-                        <p class="text-red-500 font-bold mb-4">Error loading files!</p>
-                        <p class="text-sm">Make sure seo.json and products.json are in the same folder.</p>
-                    </div>
-                `;
+        // --- البيانات مدمجة هنا لضمان عمل الموقع فوراً ---
+        const siteData = {
+            en: {
+                site_title: "GoLivid Shop | Buy Efootball Coins",
+                meta_desc: "Buy account Efootball 2026, Bounty Rush, and cheap coins.",
+                hero_title: "Efootball 2026 Coins",
+                hero_desc: "Recharge your Android account instantly with the best rates in Iraq.",
+                hero_btn: "Explore Shop",
+                section_title: "Android Coin Packages",
+                footer_title: "Contact Our Support",
+                lang_btn: "العربية",
+                buy_wa: "Buy via WhatsApp",
+                buy_gmail: "Buy via Gmail",
+                currency: "$"
+            },
+            ar: {
+                site_title: "متجر جو ليفيد | شحن كوينز ايفوتبول",
+                meta_desc: "شراء حسابات ايفوتبول 2026، بونتي راش، وشحن كوينز رخيص.",
+                hero_title: "كوينز ايفوتبول 2026",
+                hero_desc: "اشحن حسابك الأندرويد فوراً وبأفضل الأسعار داخل العراق.",
+                hero_btn: "تصفح المتجر",
+                section_title: "باقات شحن الأندرويد",
+                footer_title: "تواصل مع الدعم الفني",
+                lang_btn: "English",
+                buy_wa: "شراء عبر واتساب",
+                buy_gmail: "شراء عبر الإيميل",
+                currency: "$"
             }
-        }
+        };
+
+        const products = [
+            { id: 1, name_en: "2100 🪙 Pack", name_ar: "باقة 2100 كوينز", price: "4", image: "1000227623.jpg" },
+            { id: 2, name_en: "3100 🪙 Pack", name_ar: "باقة 3100 كوينز", price: "4.6", image: "1000227623.jpg" },
+            { id: 3, name_en: "4100 🪙 Pack", name_ar: "باقة 4100 كوينز", price: "6", image: "1000227623.jpg" },
+            { id: 4, name_en: "5100 🪙 Pack", name_ar: "باقة 5100 كوينز", price: "7.8", image: "1000227623.jpg" },
+            { id: 5, name_en: "6000 🪙 Pack", name_ar: "باقة 6000 كوينز", price: "9.5", image: "1000227623.jpg" },
+            { id: 6, name_en: "7000 🪙 Pack", name_ar: "باقة 7000 كوينز", price: "12", image: "1000227623.jpg" },
+            { id: 7, name_en: "8000 🪙 Pack", name_ar: "باقة 8000 كوينز", price: "15.5", image: "1000227623.jpg" },
+            { id: 8, name_en: "9000 🪙 Pack", name_ar: "باقة 9000 كوينز", price: "18", image: "1000227623.jpg" },
+            { id: 9, name_en: "10000 🪙 Pack", name_ar: "باقة 10000 كوينز", price: "21", image: "1000227623.jpg" },
+            { id: 10, name_en: "11000 🪙 Pack", name_ar: "باقة 11000 كوينز", price: "24", image: "1000227623.jpg" },
+            { id: 11, name_en: "12000 🪙 Pack", name_ar: "باقة 12000 كوينز", price: "28", image: "1000227623.jpg" },
+            { id: 12, name_en: "13000 🪙 Pack", name_ar: "باقة 13000 كوينز", price: "31", image: "1000227623.jpg" }
+        ];
+
+        let currentLang = 'en';
 
         function toggleLanguage() {
-            lang = lang === 'en' ? 'ar' : 'en';
+            currentLang = currentLang === 'en' ? 'ar' : 'en';
             updateUI();
         }
 
         function updateUI() {
-            const isAr = lang === 'ar';
-            const s = seo[lang];
+            const isAr = currentLang === 'ar';
+            const data = siteData[currentLang];
             
+            // Layout adjustments
             document.getElementById('main-html').dir = isAr ? 'rtl' : 'ltr';
-            document.getElementById('main-html').lang = lang;
-            document.body.className = `bg-slate-50 text-slate-900 lang-${lang}`;
+            document.getElementById('main-html').lang = currentLang;
+            document.body.className = `bg-slate-50 text-slate-900 lang-${currentLang}`;
             
-            // SEO & Headings
-            document.title = s.site_title;
-            document.getElementById('meta-desc').content = s.meta_description;
-            document.getElementById('meta-keys').content = s.meta_keywords;
+            // Header & SEO
+            document.title = data.site_title;
+            document.getElementById('meta-desc').content = data.meta_desc;
+            document.getElementById('lang-btn-text').innerText = data.lang_btn;
             
-            document.getElementById('lang-btn-text').innerText = isAr ? "English" : "العربية";
-            document.getElementById('hero-title').innerText = s.hero_main_title;
-            document.getElementById('hero-sub').innerText = s.hero_sub_title;
-            document.getElementById('hero-btn').innerText = isAr ? "تصفح المتجر" : "Explore Shop";
-            document.getElementById('section-title').innerText = isAr ? "الحسابات المتوفرة" : "Available Accounts";
+            // Hero
+            document.getElementById('hero-title').innerText = data.hero_title;
+            document.getElementById('hero-desc').innerText = data.hero_desc;
+            document.getElementById('hero-btn').innerText = data.hero_btn;
+            
+            // Section
+            document.getElementById('section-title').innerText = data.section_title;
+            document.getElementById('footer-title').innerText = data.footer_title;
 
             renderProducts();
         }
 
         function renderProducts() {
             const grid = document.getElementById('products-grid');
-            const currency = lang === 'ar' ? "دينار" : "IQD";
-            const btnText = lang === 'ar' ? "اطلب عبر واتساب" : "Buy via WhatsApp";
-
+            const data = siteData[currentLang];
+            
             grid.innerHTML = products.map(p => `
                 <div class="product-card bg-white rounded-3xl border border-slate-100 overflow-hidden flex flex-col h-full shadow-sm">
-                    <img src="${p.image}" class="w-full h-56 object-cover" alt="${p['name_'+lang]}">
+                    <div class="relative aspect-video bg-slate-100">
+                        <!-- Ensure image file exists in the same folder -->
+                        <img src="${p.image}" alt="${currentLang === 'ar' ? p.name_ar : p.name_en}" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-indigo-600 text-white text-[10px] font-bold px-2 py-1 rounded shadow-md">ANDROID</div>
+                    </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold mb-2">${p['name_'+lang]}</h3>
-                        <p class="text-slate-500 text-sm mb-6 flex-grow">${p['desc_'+lang]}</p>
+                        <h4 class="text-xl font-bold mb-4 text-slate-800">${currentLang === 'ar' ? p.name_ar : p.name_en}</h4>
                         <div class="mt-auto">
-                            <div class="text-indigo-600 font-black text-2xl mb-4">${p.price} <span class="text-xs">${currency}</span></div>
-                            <button onclick="orderWA('${p['name_'+lang]}', '${p.price}')" class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition">
-                                <i class="fab fa-whatsapp"></i> ${btnText}
-                            </button>
+                            <div class="text-indigo-600 font-black text-3xl mb-6">
+                                <span class="text-lg font-bold">${data.currency}</span>${p.price}
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <button onclick="orderWhatsApp('${currentLang === 'ar' ? p.name_ar : p.name_en}', '${p.price}')" 
+                                    class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-xl font-bold transition flex items-center justify-center gap-2">
+                                    <i class="fab fa-whatsapp"></i> ${data.buy_wa}
+                                </button>
+                                <button onclick="orderGmail('${currentLang === 'ar' ? p.name_ar : p.name_en}', '${p.price}')"
+                                    class="w-full bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-600 py-3 rounded-xl font-bold transition flex items-center justify-center gap-2">
+                                    <i class="far fa-envelope"></i> ${data.buy_gmail}
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             `).join('');
         }
 
-        function orderWA(name, price) {
-            const msg = `Order: ${name} (${price})`;
-            window.open(`https://wa.me/9647805380508?text=${encodeURIComponent(msg)}`, '_blank');
+        function orderWhatsApp(name, price) {
+            const text = encodeURIComponent(`Order from GoLivid Shop:\nProduct: ${name}\nPrice: $${price}`);
+            window.open(`https://wa.me/9647805380508?text=${text}`, '_blank');
         }
 
-        loadStore();
+        function orderGmail(name, price) {
+            const subject = encodeURIComponent(`Purchase Order: ${name}`);
+            const body = encodeURIComponent(`Hello GoLivid Shop,\n\nI would like to purchase the following package:\nProduct: ${name}\nPrice: $${price}\n\nPlease let me know the payment details.`);
+            window.location.href = `mailto:GoLividShop@gmail.com?subject=${subject}&body=${body}`;
+        }
+
+        // Run on load
+        document.addEventListener('DOMContentLoaded', updateUI);
     </script>
 </body>
 </html>
