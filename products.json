@@ -22,5 +22,17 @@
     { "id": 106, "title": "Efootball 2026", "info": "8200 🪙", "price": "13.5", "image": "https://i.ibb.co/ycwq3CpQ/images.jpg" },
     { "id": 107, "title": "Efootball 2026", "info": "9200 🪙", "price": "18", "image": "https://i.ibb.co/ycwq3CpQ/images.jpg" },
     { "id": 108, "title": "Efootball 2026", "info": "12k-13k 🪙", "price": "25", "image": "https://i.ibb.co/ycwq3CpQ/images.jpg" }
+  ],
+  "bountyrush": [
+    { "id": 201, "title": "One Piece Bounty Rush", "info": "Coming Soon - قريباً", "price": "0", "image": "https://ibb.co/B5vdd88v" }
+  ],
+  "tsubasa": [
+    { "id": 301, "title": "Captain Tsubasa: DT", "info": "Coming Soon - قريباً", "price": "0", "image": "https://ibb.co/ch6RmSBM" }
+  ],
+  "yugioh": [
+    { "id": 401, "title": "Yu-Gi-Oh! Master Duel", "info": "Coming Soon - قريباً", "price": "0", "image": "https://ibb.co/Fb4kKjgv" }
+  ],
+  "genshin": [
+    { "id": 501, "title": "Genshin Impact", "info": "Coming Soon - قريباً", "price": "0", "image": "https://ibb.co/wN78WcTZ" }
   ]
 }
